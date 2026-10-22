@@ -16,7 +16,7 @@ API_KEY = ""
 DOI = ""
 VERSION = ""
 OUTPUT_DIR = "./datasets"
-LOG_PATH = ''
+LOG_PATH = ""
 
 # Extends script by Jonathan Dan
 __email__ = "rdm at kuleuven.be"
@@ -30,8 +30,9 @@ def config_logger():
                     datefmt='%H:%M:%S')
 
     filename = DOI.split('/')[-1] 
+    Path("logs").mkdir(exist_ok=True)
     LOG_PATH = os.path.join(
-        '.', 
+        'logs', 
         f'download-{filename}-{datetime.datetime.today().strftime("%Y%m%d%H%M%S")}.log'
         )
     file_handler = logging.FileHandler(filename=LOG_PATH, mode='a')
