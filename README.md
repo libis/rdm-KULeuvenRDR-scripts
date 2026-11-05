@@ -13,7 +13,7 @@ Each script gets its own folder in this repository. In this folder, all accompan
 ## DownloadDataset
 * **Purpose:** This python script helps you download a specified version of a dataset from KU Leuven RDR, keeping the directory structure. 
 * **Results/Output:** The dataset downloaded into a local folder with the file structure in RDR, except for the restricted files.
-* **Documentation:** [DownloadDataset/read_me.md](DownloadDataset/read_me.md)
+* **Documentation:** [DownloadDataset/README.md](DownloadDataset/README.md)
 * **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 * **Run when:** You want to download all files of a dataset from RDR, preserving its folder structure. 
 * **Run where:**  On your computer locally.
